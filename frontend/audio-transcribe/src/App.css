@@ -1,0 +1,122 @@
+.container {
+  min-height: 100vh;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Upload Zone */
+.uploadZone {
+  border: 1px dashed #e0e0e0;
+  background: white;
+  border-radius: 16px;
+  padding: 60px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploadZone:hover {
+  border-color: #000;
+  background: #fafafa;
+}
+
+.uploadIcon {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.uploadZone:hover .uploadIcon {
+  color: #000;
+}
+
+/* Transcription Card */
+.resultCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: left;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  animation: slideUp 0.5s ease-out;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f9f9f9;
+  padding-bottom: 12px;
+}
+
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  font-weight: 700;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  color: #ff4d4d;
+}
+
+.transcriptionText {
+  line-height: 1.7;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+  color: #000;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
